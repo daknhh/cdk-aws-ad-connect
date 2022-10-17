@@ -1,0 +1,27 @@
+{
+    "general": {
+        "produkt": "AD-Connect",
+        "stage": "TEST",
+        "prefix": "CUSTOMER"
+    },
+    "ad": {
+    "Name": "Ad-Name",
+    "ShortName": "Ad-ShortName",
+    "Password": {
+        "encryptedvalue": "",
+        "kmskeyid": "KMSKEYID"
+    },
+    "Description": "EXAMPLE-DESCRIPTION",
+    "Size": "Large",
+    "ConnectionSettings": {
+    "VpcId": "vpc-123",
+    "SubnetIds": ["subnet-123","subnet-123"],
+    "CustomerDnsIps": ["1.1.1.1","1.1.1.2"],
+    "CustomerUserName": "ServiceUserName"
+    }
+    },
+       "secret": {
+         "kmskeyalias": "TEST/KMS/SM/DEFAULT/ENCRYPTION",
+         "description": "AD Service Account für AWS SSO"
+      }
+}
